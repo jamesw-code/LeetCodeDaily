@@ -25,11 +25,16 @@ public class FindBottomLeftTreeValue {
      */
     public int solution(TreeNode root) {
         int answer= -1;
-        if(root.left == null) {
-            answer = root.val;
-        } else {
+
+        if(root.right != null && root.right.left != null) {
+            answer = solution(root.right);
+        } else if(root.left != null){
             answer = solution(root.left);
+        }
+        else if(root.left == null){
+            answer = root.val;
         }
         return answer;
     }
 }
+

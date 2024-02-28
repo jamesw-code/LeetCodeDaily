@@ -27,20 +27,23 @@ class FindBottomLeftTreeValueTest {
 
     @Test
     void secondTest(){
-        TreeNode sevenValue = new TreeNode(1, null, null);
+        TreeNode sevenValue = new TreeNode(7, null, null);
         TreeNode fiveValue = new TreeNode(5, sevenValue, null);
         TreeNode sixValue = new TreeNode(6, null, null);
         TreeNode threeValue = new TreeNode(3, fiveValue, sixValue);
-
         TreeNode twoValue = new TreeNode(2, new TreeNode(4), null);
         TreeNode oneValue = new TreeNode(1, twoValue, threeValue);
-
 
         int answer = findBottomLeftTreeValue.solution(oneValue);
 
         Assertions.assertEquals(7, answer);
     }
 
-
+    @Test
+    void fiftyFirstTest() {
+        TreeNode testCase = new TreeNode(0,null,new TreeNode(-1));
+        int answer = findBottomLeftTreeValue.solution(testCase);
+        Assertions.assertEquals(-1, answer);
+    }
 
 }
