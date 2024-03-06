@@ -33,7 +33,13 @@ public class LinkedListCycleTest {
         Assert.assertTrue("Returned wrong: " + answer,answer);
     }
 
+    @Test
+    //        Input: head = [],
+    //        Output: false
+    //        Explanation: its empty
     public void testThree() {
+        boolean answer = linkedListCycle.hasCycle(null);
+        Assert.assertFalse("Returned wrong: " + answer,answer);
 
     }
 }
