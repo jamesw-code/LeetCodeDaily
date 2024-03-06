@@ -28,8 +28,12 @@ public class LinkedListCycleTest {
         nodeZero.next = nodeNegFour;
         nodeNegFour.next = nodeTwo;
 
-        boolean asnwer = linkedListCycle.hasCycle(nodeThree);
+        boolean answer = linkedListCycle.hasCycle(nodeThree);
 
-        Assert.assertTrue("Returned wrong: " + asnwer,asnwer);
+        Assert.assertTrue("Returned wrong: " + answer,answer);
+    }
+
+    public void testThree() {
+
     }
 }
