@@ -6,7 +6,29 @@ import org.jameskodes.helpers.ListNode;
  * Leet Code Daily Challenge 03062024
  * 876. Middle of the Linked List
  */
+
+
+
 public class MiddleOfTheLinkedList {
+
+    // Better Solution to problem fast and slow, turtle and hair
+    public ListNode middleNodeSolution(ListNode head) {
+        if (head == null || head.next == null)
+            return head;
+
+        ListNode fast = head;
+        ListNode slow = head;
+
+        while (fast != null) {
+            fast = fast.next;
+            if (fast != null) {
+                fast = fast.next;
+                slow = slow.next;
+            }
+        }
+
+        return slow;
+    }
 
     public ListNode middleNode(ListNode head) {
 
