@@ -25,4 +25,18 @@ public class MinimumCommonValueTest {
 
         Assert.assertEquals(2, answer);
     }
+
+    @Test
+    public void testCaseThirtySeven() {
+        int answer = minimumCommonValue.getCommon( new int[]{3,5}, new int[] {2});
+
+        Assert.assertEquals(-1, answer);
+    }
+
+    @Test
+    public void testCaseThirtyFive() {
+        int answer = minimumCommonValue.getCommon( new int[]{2,4}, new int[] {1,2});
+
+        Assert.assertEquals(2, answer);
+    }
 }
