@@ -14,34 +14,20 @@ public class FindCenterOfStar {
         int centerNumber = 0;
         int maxCount = 0;
 
-        int n = edges.length;
+        for (int[] edge : edges) {
 
-        for(int x = 0; x < n; x++) {
-
-            if(map.containsKey(edges[x][0])) {
-               int count = map.get(edges[x][0]) + 1;
-               map.put(edges[x][0], count +1);
-               if(count > maxCount) {
-                   maxCount = count;
-                   centerNumber =  edges[x][0];
-               }
-            } else {
-                map.put(edges[x][0], 1);
-
-            }
-
-            if(map.containsKey(edges[x][1])) {
-                int count = map.get(edges[x][1]) + 1;
-                map.put(edges[x][1], count +1);
-                if(count > maxCount) {
-                    maxCount = count;
-                    centerNumber =  edges[x][1];
+            for(int x = 0; x < 2; x++) {
+                if (map.containsKey(edge[x])) {
+                    int count = map.get(edge[x]) + 1;
+                    map.put(edge[x], count + 1);
+                    if (count > maxCount) {
+                        maxCount = count;
+                        centerNumber = edge[x];
+                    }
+                } else {
+                    map.put(edge[x], 1);
                 }
-            } else {
-                map.put(edges[x][1], 1);
             }
-
-
         }
 
         return centerNumber;
