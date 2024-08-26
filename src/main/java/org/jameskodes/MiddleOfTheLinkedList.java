@@ -1,6 +1,6 @@
 package org.jameskodes;
 
-import org.jameskodes.helpers.ListNode;
+import org.jameskodes.datastructures.ListNode;
 
 /**
  * Leet Code Daily Challenge 03062024

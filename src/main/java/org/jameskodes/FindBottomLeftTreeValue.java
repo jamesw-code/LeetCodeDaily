@@ -1,7 +1,7 @@
 package org.jameskodes;
 
 
-import org.jameskodes.helpers.TreeNode;
+import org.jameskodes.datastructures.TreeNode;
 
 /**
  * Leet Code Daily Challenge 20240228

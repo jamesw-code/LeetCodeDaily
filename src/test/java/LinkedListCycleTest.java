@@ -1,5 +1,5 @@
 import org.jameskodes.LinkedListCycle;
-import org.jameskodes.helpers.ListNode;
+import org.jameskodes.datastructures.ListNode;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

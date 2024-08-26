@@ -1,6 +1,6 @@
 package org.jameskodes;
 
-import org.jameskodes.helpers.ListNode;
+import org.jameskodes.datastructures.ListNode;
 
 import java.util.HashMap;
 

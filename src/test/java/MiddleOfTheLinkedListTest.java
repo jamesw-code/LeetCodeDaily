@@ -1,6 +1,6 @@
 import org.jameskodes.MiddleOfTheLinkedList;
-import org.jameskodes.helpers.ListNode;
-import org.jameskodes.helpers.ListNodeService;
+import org.jameskodes.datastructures.ListNode;
+import org.jameskodes.datastructures.ListNodeService;
 import org.junit.Before;
 import org.junit.Test;
 

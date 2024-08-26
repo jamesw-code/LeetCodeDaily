@@ -1,4 +1,4 @@
-package org.jameskodes.helpers;
+package org.jameskodes.datastructures;
 
 public class ListNodeService {
 

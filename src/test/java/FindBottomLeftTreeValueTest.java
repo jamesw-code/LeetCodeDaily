@@ -1,5 +1,5 @@
 import org.jameskodes.FindBottomLeftTreeValue;
-import org.jameskodes.helpers.TreeNode;
+import org.jameskodes.datastructures.TreeNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
